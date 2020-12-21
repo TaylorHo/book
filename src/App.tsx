@@ -1,5 +1,7 @@
 import React from 'react';
-import './styles/global.css';
+import './global.css';
+
+import SearchPage from './pages/SearchPage';
 
 function App() {
   return (
@@ -7,11 +9,13 @@ function App() {
       <div className="topbar">
         <div className="left">Books</div>
         <div className="right">
-          <a href="#"><i className="fab fa-github"></i> GitHub</a>
+          <a href="https://github.com/TaylorHo/book"><i className="fab fa-github"></i> GitHub</a>
         </div>
       </div>
 
-      <div id="container"></div>
+      <div className="container">
+        <SearchPage/>
+      </div>
 
       <div className="help"><i className="fas fa-question-circle"></i></div>
     </div>
