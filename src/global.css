@@ -24,10 +24,18 @@ a {
   text-decoration: none;
   color: var(--text);
 }
+/* Global Classes - Start */
+
+.d-none {
+  display: none!important;
+}
+
+/* Global Classes - End */
+
 /* Default - End */
 /* Topbar - Start */
 .topbar{
-  position: sticky;
+  position: fixed;
   display: flex;
   top: 0;
   z-index: 100;
@@ -53,8 +61,19 @@ a {
   cursor: pointer;
 }
 /* Help - End */
+/* Container - Start */
 
+.container {
+  width: 100%;
+  height: 100vh;
+  padding: 6.2rem 0 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
+/* Container - End */
 /* Devices */
 
 @media screen and (min-width: 500px){

@@ -2,6 +2,7 @@ import React from 'react';
 import './global.css';
 
 import SearchPage from './pages/SearchPage';
+import BookPage from './pages/BookPage';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
 
       <div className="container">
         <SearchPage/>
+        <BookPage/>
       </div>
 
       <div className="help"><i className="fas fa-question-circle"></i></div>
