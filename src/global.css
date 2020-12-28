@@ -3,6 +3,7 @@
   --background: #F0F0F7;
   --white: #fff;
   --text: #858585;
+  --text-darker: #696969;
 }
 
 * {
@@ -28,6 +29,9 @@ a {
 
 .d-none {
   display: none!important;
+}
+.d-hidden {
+  visibility: hidden!important;
 }
 
 /* Global Classes - End */
@@ -66,7 +70,7 @@ a {
 .container {
   width: 100%;
   height: 100vh;
-  padding: 6.2rem 0 2.4rem;
+  padding: 6.2rem 2rem 2.4rem;
   display: flex;
   align-items: center;
   justify-content: center;

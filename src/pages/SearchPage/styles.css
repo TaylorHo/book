@@ -1,12 +1,22 @@
 #SearchPage {
   max-width: 700px;
+  width: 100%;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
-
+.src-cont {
+  max-width: 400px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 4fr 35px;
+  column-gap: 10px;
+}
 .cntr {
   display: table;
   width: 100%;
+  max-width: 400px;
   height: 100%;
 }
 .cntr .cntr-innr {
@@ -20,8 +30,8 @@
   height: 35px;
   width: 35px;
   box-sizing: border-box;
-  margin: 0px 8px 7px 0px;
-  padding: 7px 9px 0px 9px;
+  margin: 0px 8px 7px 45px;
+  padding: 5px 9px 5px 9px;
   border: 3px solid var(--text);
   border-radius: 25px;
   transition: all 200ms ease;
@@ -39,10 +49,17 @@
   transform: rotate(-45deg);
   transition: all 200ms ease;
 }
-.search.active,
 .search:hover {
-  width: 200px;
+  width: 100%;
+  max-width: 400px;
   margin-right: 0px;
+  margin-left: 35px;
+}
+.search.active{
+  width: 100%;
+  max-width: 400px;
+  margin-right: 0px;
+  margin-left: 3px;
 }
 .search.active:after,
 .search:hover:after {
@@ -52,9 +69,16 @@
   width: 100%;
   border: none;
   box-sizing: border-box;
-  font-family: Helvetica;
   font-size: 15px;
-  color: inherit;
   background: transparent;
   outline-width: 0px;
+}
+
+.btn-search{
+  border: none;
+  background: var(--background);
+  font-size: 29px;
+  color: var(--text-darker);
+  padding-top: 1px;
+  transition: all .2s ease;
 }
